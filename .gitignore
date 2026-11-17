@@ -150,6 +150,8 @@ vite.config.ts.timestamp-*
 
 # Turbo Repo (https://turborepo.dev/)
 .turbo
+# WhatsApp Bot Session & Auth
+auth_info/
 
 # Nx (https://nx.dev/)
 .nx/cache

@@ -2,9 +2,11 @@ FROM node:22-alpine
 
 WORKDIR /app
 
-# Copy package files and install dependencies normally
+# Copy package files
 COPY package*.json ./
-RUN npm install
+
+# Clean npm cache and install without strict integrity blockers
+RUN npm cache clean --force && npm install --no-audit
 
 # Copy the rest of the project files
 COPY . .

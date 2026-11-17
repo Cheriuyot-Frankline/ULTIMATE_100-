@@ -1,5 +1,5 @@
 console.log("🚀 Starting ULTIMATE_100 Bot...");
-
+const http = require('http');
 const {
     default: makeWASocket,
     useMultiFileAuthState,
